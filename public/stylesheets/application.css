@@ -76,7 +76,7 @@ div.signin {
 	width: 30%;
 	margin-left: auto;
 	margin-right: auto;
-	background: #FDF5E6;
+	background: #DEB887;
 	border: solid black;
 }
 
@@ -84,17 +84,19 @@ div.signin {
 
 div.header {
 	margin-top: 0;
-	background: #FDF5E6;
+	background: #DEB887;
 	border-bottom: solid black;
 }
 
 div.header img {
 	float: left;
+	margin-top: 10px;
 	padding: 5px;
 }
 
 div.header h2 {
-	padding-top: .5em;
+	
+	padding: .5em;
 	text-align: right;
 }
 
