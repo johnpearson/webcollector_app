@@ -1,1 +1,12 @@
-<%= render 'shared/user_header'%>
+<%= render 'shared/user_header' %>
+<div class="folders round">
+	<% if @folders.empty? %>
+		<h2>You have no folders!
+		<%= link_to "Create New Folder", new_folder_path %></h2>
+	<% else %>
+		<h1>Current Folders</h1>	
+		<table class="folders">
+			<%= render 'shared/folders' %>
+		</table>
+	<% end %>
+</div>

@@ -106,6 +106,104 @@ div.header ul li {
 	text-align: right;
 }
 
+/* Folders Styling */
+
+div.folders {
+	background: #DEB887;
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table.folders {
+	width: 880px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table.folders tr td {
+	padding-top: 1em;
+	padding-left: 2em;
+	border-bottom: thin solid gray;
+}
+
+table.folders tr ul li {
+	list-style: none;
+}
+
+/* Form, Error Messages, and Flash Messages */
+
+#flash_alert {
+	padding-left: 1em;
+	width: 35%;
+	font-size: 150%;
+	background: #FF6347;
+}
+
+#flash_notice {
+	padding-left: 1em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	width: 25%;
+	font-size: 125%;
+	background: #F0E68C;
+}
+
+#flash_success {
+	padding-left: 1em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	width: 25%;
+	font-size: 125%;
+	background: #F0E68C;
+	
+}
+
+.field_with_errors {
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 2px;
+	background-color: red;
+	display: table;
+}
+
+.field_with_errors label {
+	color: #fff;
+}
+
+#error_explanation {
+	width: 400px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 15px;
+	font-size: 12px;
+	margin: -7px;
+	background-color: #c00;
+	color: #fff;
+}
+
+#error_explanation p {
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+#error_explanation ul li {
+	padding-top: 10px;
+	font-size: 12px;
+	list-style: none;
+	padding-left: 1em;
+}
+
 /* Round corners */
 
 .round {

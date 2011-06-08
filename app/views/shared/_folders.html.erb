@@ -1,0 +1,19 @@
+<% @folders.each do |folder| %>
+<tr>
+	<td>
+		<ul>	
+			<li><h2><b><%= folder.name %></b></h2></li><br />
+			<li><b>Created on: </b><%= (folder.created_at.to_formatted_s(
+								:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></li>
+			<li><b>Content: </b><%= simple_format(folder.content) %></li><br />
+			<% if user_signed_in? %>
+			<li><%= link_to "Edit", "folders/#{folder.id}/edit" %></li>
+			<li><%= link_to "Delete", folder, 
+									:method => :delete,
+ 									:confirm => "Are you sure?", 
+									:title => "Delete #{folder.name}" %></li><br />
+			<% end %>
+		</ul>
+	</td>
+</tr>
+<% end %>

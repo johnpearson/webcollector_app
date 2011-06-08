@@ -3,4 +3,5 @@ WebcollectorApp::Application.routes.draw do
     get '/' => 'devise/sessions#new'
     get '/user' => 'users#show'
   end
+  resources :folders
 end

@@ -6,4 +6,7 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
+  
+  # Users have many folders that are associated with each user
+  has_many :folders, :dependent => :destroy
 end

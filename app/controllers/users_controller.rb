@@ -4,5 +4,8 @@ class UsersController < ApplicationController
   
   def show
     @user = current_user
+    @folder = Folder.new
+    @folders = @user.folders
+    @title = current_user.email
   end
 end
