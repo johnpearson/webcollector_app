@@ -76,8 +76,32 @@ div.signin {
 	width: 30%;
 	margin-left: auto;
 	margin-right: auto;
-	background: #5F9EA0;
+	background: #FDF5E6;
 	border: solid black;
+}
+
+/* Header Styling */
+
+div.header {
+	margin-top: 0;
+	background: #FDF5E6;
+	border-bottom: solid black;
+}
+
+div.header img {
+	float: left;
+	padding: 5px;
+}
+
+div.header h2 {
+	padding-top: .5em;
+	text-align: right;
+}
+
+div.header ul li {
+	padding: .5em;
+	list-style: none;
+	text-align: right;
 }
 
 /* Round corners */
