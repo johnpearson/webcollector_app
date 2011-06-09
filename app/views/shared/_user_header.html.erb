@@ -1,9 +1,9 @@
 <div class="header">
 	<%= image_tag('header.png', :alt => "header") %>
-		<ul>
-			<li><%= text_field_tag("Search", "Enter search terms here", 
-									:size => 30) %></li>
-			<li><%= link_to "Edit Profile", edit_user_registration_path %></li>
-			<li><%= link_to "Sign Out", destroy_user_session_path %></li>
-		</ul>
+		<div class="links">
+			<ul>
+				<li><%= link_to edit_button, edit_user_registration_path %></li>
+				<li><%= link_to out_button, destroy_user_session_path %></li>
+			</ul>
+		</div>
 </div>

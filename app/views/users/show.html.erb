@@ -4,7 +4,10 @@
 		<h2>You have no folders!
 		<%= link_to "Create New Folder", new_folder_path %></h2>
 	<% else %>
-		<h1>Current Folders</h1>	
+		<%= image_tag("folders.png", :alt => "Current Folders") %>
+		<div class="newfolder">
+			<h2><%= link_to new_folder, new_folder_path %></h2>
+		</div>	
 		<table class="folders">
 			<%= render 'shared/folders' %>
 		</table>

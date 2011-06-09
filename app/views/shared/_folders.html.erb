@@ -2,13 +2,18 @@
 <tr>
 	<td>
 		<ul>	
-			<li><h2><b><%= folder.name %></b></h2></li><br />
-			<li><b>Created on: </b><%= (folder.created_at.to_formatted_s(
-								:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></li>
-			<li><b>Content: </b><%= simple_format(folder.content) %></li><br />
+			<li><%= image_tag("folder_image.png", :alt => "folder image") %>
+				<strong><%= folder.name %></strong></li>
+			<li><i>Created <%= (folder.created_at.to_formatted_s(
+						:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></i></li><br />
+			<li><i>Collection:</i><br /><% @content = folder.content %>
+									 <% @content_arr = @content.split("\r\n") %>
+									 <% @content_arr.each do |line| %>
+									 -<%= link_to "#{line}", "#{line}" %><br />
+									 <% end %></li><br />
 			<% if user_signed_in? %>
-			<li><%= link_to "Edit", "folders/#{folder.id}/edit" %></li>
-			<li><%= link_to "Delete", folder, 
+			<li><%= link_to "Edit", "folders/#{folder.id}/edit" %>
+			or&nbsp;<%= link_to "Delete", folder, 
 									:method => :delete,
  									:confirm => "Are you sure?", 
 									:title => "Delete #{folder.name}" %></li><br />
