@@ -151,6 +151,14 @@ div.newfolder {
 div.newfolder a:hover {
 	text-decoration: underline;
 }
+
+/* Pagination styling */
+
+div.paginate {
+	text-align: center;
+	padding-top: 65px;
+}
+
 /* Form, Error Messages, and Flash Messages */
 
 #flash_alert {

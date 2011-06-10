@@ -1,16 +1,19 @@
 <%= render 'shared/user_header' %>
-<div class="links">
-	<ul>
-		<li><%= link_to edit_button, edit_user_registration_path %></li>
-		<li><%= link_to out_button, destroy_user_session_path %></li>
-	</ul>
-</div>
 <div class="folders round">
-	<%= image_tag("folders.png", :alt => "Current Folders") %>
-	<div class="newfolder">
-		<h2><%= link_to new_folder, new_folder_path %></h2>
-	</div>	
-	<table class="folders">
-		<%= render 'shared/folders' %>
-	</table>
+	<% if @folders.empty? %>
+		<h2>You have no folders!
+		<%= link_to "Create New Folder", new_folder_path %></h2>
+	<% else %>
+		<%= image_tag("folders.png", :alt => "Current Folders") %>
+		<div class="newfolder">
+			<h2><%= link_to new_folder, new_folder_path %></h2>
+		</div>	
+		<table class="folders">
+			<%= render 'shared/folders' %>
+		</table>
+	<% end %>
+	<div class="paginate">
+		<%= will_paginate %>
+	</div>
 </div>
+
