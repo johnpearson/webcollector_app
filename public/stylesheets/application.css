@@ -84,7 +84,7 @@ div.signin {
 
 div.header {
 	margin-top: 0;
-	height: 125px;
+	height: 115px;
 	background-image: url('background.png');
 }
 
@@ -107,12 +107,13 @@ div.links ul li {
 /* Folders Styling */
 
 div.folders {
-	margin-top: 5px;
-	background: #FAEBD7;
-	width: 980px;
+	margin-top: 2px;
+	padding-top: 1.5em;
+	background-image: url('folder_background.png');
+	width: 1020px;
+	height: 1090px;
 	margin-right: auto;
 	margin-left: auto;
-	border: thin solid black;
 }
 
 table.folders {
@@ -127,7 +128,7 @@ table.folders img {
 }
 
 table.folders tr td {
-	padding-top: 1em;
+	padding-top: .5em;
 	padding-left: 2em;
 	border-bottom: solid gray;
 }
@@ -143,7 +144,8 @@ table.folders tr ul li a:hover {
 
 div.newfolder {
 	float: right;
-	padding: .5em;
+	padding-top: .5em;
+	padding-right: 2em;
 }
 
 div.newfolder a:hover {
