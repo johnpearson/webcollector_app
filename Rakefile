@@ -4,6 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-include Rake::DSL if defined?(Rake::DSL)
-
 WebcollectorApp::Application.load_tasks
