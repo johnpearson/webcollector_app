@@ -99,13 +99,9 @@ div.links {
 }
 
 div.links ul li {
-	text-align: right;
+	float: right;
 	list-style: none;
 	padding-right: .5em;
-}
-
-div.links a img {
-	padding-left: 585px;
 }
 
 /* Folders Styling */
