@@ -8,6 +8,7 @@ gem 'heroku'
 gem 'devise'
 gem 'paperclip'
 gem 'haml'
+gem 'rake', '!= 0.9.0'
 
 group :development do
 	gem 'rspec-rails'
