@@ -8,7 +8,7 @@ gem 'heroku'
 gem 'devise'
 gem 'paperclip'
 gem 'haml'
-gem 'rake', '0.8.7'
+gem 'rake'
 
 group :development do
 	gem 'rspec-rails'
