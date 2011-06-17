@@ -94,18 +94,23 @@ div.header {
 
 div.header img {
 	float: left;
-	margin-top: 5px;
+	margin-top: 8px;
+}
+
+div.header input {
+	padding: 2px;
+	margin-top: 24px;
+	margin-left: 180px;
 }
 
 div.links {
 	padding-top: 10px;
-	padding-left: 10px;
+	float: right;
 }
 
 div.links ul li {
-	float: right;
-	list-style: none;
-	padding-right: .5em;
+	display: inline-block;
+	list-style-type: none;
 }
 
 /* Folders Styling */
