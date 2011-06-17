@@ -84,17 +84,17 @@ div.signin {
 
 div.header {
 	margin-top: 0;
-	height: 115px;
-	background-image: url('background.png');
+	height: 77px;
+	background-image: url('header_background.png');
 }
 
 div.header img {
 	float: left;
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 div.links {
-	padding-top: 1px;
+	padding-top: 5px;
 	padding-left: 10px;
 }
 
