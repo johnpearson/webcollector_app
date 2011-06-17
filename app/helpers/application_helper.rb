@@ -1,7 +1,7 @@
 module ApplicationHelper
   # Sets base title
   def title
-    base_title = "The Web Collector"
+    base_title = "Web Collector"
     if @title.nil?
       base_title
     else

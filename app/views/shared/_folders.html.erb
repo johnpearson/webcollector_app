@@ -6,17 +6,17 @@
 				<strong><%= folder.name %></strong></li>
 			<li><i>Created <%= (folder.created_at.to_formatted_s(
 						:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></i></li><br />
-			<li><i>Collection:</i><br /><% @content = folder.content %>
-									 <% @content_arr = @content.split("\r\n") %>
-									 <% @content_arr.each do |line| %>
-									 -<%= link_to "#{line}", "#{line}" %><br />
-									 <% end %></li><br />
+			<li><% @content = folder.content %>
+				<% @content_arr = @content.split("\r\n") %>
+				<% @content_arr.each do |line| %>
+				<%= link_to "#{line}", "#{line}" %><br />
+				<% end %></li><br />
 			<% if user_signed_in? %>
-			<li><%= link_to "Edit", "folders/#{folder.id}/edit" %>
+			<li><i><%= link_to "Edit", "folders/#{folder.id}/edit" %>
 			or&nbsp;<%= link_to "Delete", folder, 
-									:method => :delete,
- 									:confirm => "Are you sure?", 
-									:title => "Delete #{folder.name}" %></li><br />
+								:method => :delete,
+ 								:confirm => "Are you sure?", 
+								:title => "Delete #{folder.name}" %></i></li><br />
 			<% end %>
 		</ul>
 	</td>
