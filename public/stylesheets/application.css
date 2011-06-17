@@ -134,7 +134,8 @@ table.folders img {
 table.folders tr td {
 	padding-top: .5em;
 	padding-left: 2em;
-	border-bottom: 1px solid #99CCFF;
+	border-bottom: 2px solid #99CCFF;
+	border-bottom-style: ridge; 
 }
 
 table.folders tr ul li {
