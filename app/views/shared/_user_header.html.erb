@@ -1,10 +1,16 @@
 <div class="header">
 	<%= image_tag('header.png', :alt => "header") %>
-	<%= text_field_tag("Search", "Search", :size => 50) %>
-		<div class="links">
-			<ul>
-				<li><%= link_to edit_button, edit_user_registration_path %></li>
-				<li><%= link_to out_button, destroy_user_session_path %></li>
-			</ul>
-		</div>
+	<div class="search">
+		<% form_tag folders_path do %>
+		<%= text_field_tag("Search", "Enter search terms here", 
+							:size => 50) %>
+			<%= submit_tag "Search" %>
+			<% end %>
+	</div>
+	<div class="links">
+		<ul>
+			<li><%= link_to edit_button, edit_user_registration_path %></li>
+			<li><%= link_to out_button, destroy_user_session_path %></li>
+		</ul>
+	</div>
 </div>
