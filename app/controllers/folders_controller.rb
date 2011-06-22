@@ -20,7 +20,7 @@ class FoldersController < ApplicationController
     # The index action shows all the folders created by the user
     def index
       @folders = Folder.all.paginate(:page => params[:page], :per_page => 3)
-      @title = "Folders"
+      @title = "Your Folders"
     end
 
     # The edit action allows users to edit their folders by changing the 
