@@ -18,9 +18,21 @@ class FoldersController < ApplicationController
     end
 
     # The index action shows all the folders created by the user
+    # The index action also handles search requests by gathering all of the
+    # folders into a temp variable and then iterating across the folders
+    # with a search parameter, if the name equals the search criteria
+    # the @folders variable is populated and sent to index view
     def index
       if params[:search]
-        @folders = Folder.find_by_name
+        @temp_folders = Folder.all
+        @folders_array = []
+        @temp_folders.each do |folder|
+          @search = "#{params[:search]}"
+          if folder.name == @search
+            @folders_array.push folder
+          end
+        end
+        @folders = @folders_array.paginate(:page => params[:page], :per_page => 3)
       else
         @folders = Folder.all.paginate(:page => params[:page], :per_page => 3)
       end
