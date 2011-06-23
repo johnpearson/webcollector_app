@@ -2,7 +2,7 @@
 	<%= image_tag('header.png', :alt => "header") %>
 	<div class="search">
 		<%= form_tag folders_path, :method => 'get' do %>
-		<%= text_field_tag(:search, "Enter search terms here", 
+		<%= text_field_tag(:search, params[:search], 
 							:size => 50) %>
 			<%= submit_tag "Search", :name => nil %>
 			<% end %>

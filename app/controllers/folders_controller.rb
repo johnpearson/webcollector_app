@@ -19,7 +19,11 @@ class FoldersController < ApplicationController
 
     # The index action shows all the folders created by the user
     def index
-      @folders = Folder.all.paginate(:page => params[:page], :per_page => 3)
+      if params[:search]
+        @folders = Folder.find_by_name
+      else
+        @folders = Folder.all.paginate(:page => params[:page], :per_page => 3)
+      end
       @title = "Your Folders"
     end
 

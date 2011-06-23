@@ -7,4 +7,5 @@ class Folder < ActiveRecord::Base
   # Validations
   validates :content, :presence => true
   validates :user_id, :presence => true
+  
 end
