@@ -67,6 +67,17 @@ li a:visited {
 	text-decoration: none;
 }
 
+/* Welcome Sign In Styling */
+
+div.welcome {
+	margin-top: 20px;
+	padding: 1em;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+	border: thin solid black;
+}
 
 /* Sign-in Form Styling */
 
@@ -77,9 +88,8 @@ div.logo img {
 div.signin {
 	margin-top: 20px;
 	padding: 1em;
-	width: 30%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+	margin-left: 100px;
 	background: white;
 	border: thin solid black;
 }
@@ -99,7 +109,7 @@ div.header img {
 
 div.search {
 	position: absolute;
-	margin-left: 450px;
+	margin-left: 750px;
 	padding-top: 25px;
 }
 
@@ -117,7 +127,6 @@ div.links ul li {
 /* Folders Styling */
 
 div.folders {
-	margin-top: 2px;
 	padding-top: 1.5em;
 	background-image: url('folder_background.png');
 	width: 1020px;
@@ -140,8 +149,7 @@ table.folders img {
 table.folders tr td {
 	padding-top: .5em;
 	padding-left: 2em;
-	border-bottom: 2px solid #99CCFF;
-	border-bottom-style: ridge; 
+	border-bottom: 2px dotted #99CCFF; 
 }
 
 table.folders tr ul li {
@@ -153,14 +161,22 @@ table.folders tr ul li a:hover {
 	text-decoration: underline;
 }
 
-div.newfolder {
-	float: right;
-	padding-top: .5em;
-	padding-right: 2em;
+/* Sidebar Styling */
+
+div.sidebar {
+	padding-left: 5px;
 }
 
-div.newfolder a:hover {
-	text-decoration: underline;
+div.sidebar h2 {
+	float: left;
+	padding: 2px;
+	margin-top: 29px;
+	margin-bottom: 10px;
+	border-bottom: 2px dotted #99CCFF;
+}
+
+div.sidebar ul li {
+	padding-left: 10px;
 }
 
 /* Pagination styling */

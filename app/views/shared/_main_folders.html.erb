@@ -1,0 +1,14 @@
+<div class="folders round">
+	<% if @folders.empty? %>
+		<h2>You have no folders!
+			<%= link_to "Create New Folder", new_folder_path %></h2>
+	<% else %>
+		<%= image_tag("folders.png", :alt => "Current Folders") %>
+		<table class="folders">
+			<%= render 'shared/folders' %>
+		</table>
+	<% end %>
+	<div class="paginate">
+		<%= will_paginate %>
+	</div>
+</div>

@@ -18,7 +18,15 @@ module ApplicationHelper
     out_button = image_tag("out_button.png", :alt => "Sign Out")
   end
   
-  def new_folder
-    new_folder = image_tag("new_folder.png", :alt => "Create New Folder")
+  def new_button
+    new_button = image_tag("new_button.png", :alt => "Create New Folder")
+  end
+  
+  def profile_button
+    profile_button = image_tag("profile_button.png", :alt => "Your Profile")
+  end
+  
+  def folders_button
+    folders_button = image_tag("folders_button.png", :alt => "View Folders")
   end
 end

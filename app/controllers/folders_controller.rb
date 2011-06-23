@@ -3,6 +3,7 @@ class FoldersController < ApplicationController
 
     # The new action takes in new folder data from the form in the view
     def new
+      @user = current_user
       @folder = Folder.new
     end
 
@@ -23,6 +24,7 @@ class FoldersController < ApplicationController
     # with a search parameter, if the name equals the search criteria
     # the @folders variable is populated and sent to index view
     def index
+      @user = current_user
       if params[:search]
         @temp_folders = Folder.all
         @folders_array = []

@@ -1,0 +1,10 @@
+<div class="sidebar">
+	<h2><%= @user.email %></h2>
+	<ul>
+		<li><%= link_to folders_button, folders_path %></li>
+		<li><%= link_to profile_button, user_index_path %></li>
+		<li><%= link_to new_button, new_folder_path %></li>
+		<li><%= link_to edit_button, edit_user_registration_path %></li>
+		<li><%= link_to out_button, destroy_user_session_path %></li>
+	</ul>
+</div>
