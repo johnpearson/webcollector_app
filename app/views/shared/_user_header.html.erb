@@ -1,7 +1,7 @@
 <div class="header">
 	<%= image_tag('header.png', :alt => "header") %>
 	<div class="search">
-		<% form_tag folders_path do %>
+		<% form_tag folders_path :method => 'get' do %>
 		<%= text_field_tag("Search", "Enter search terms here", 
 							:size => 50) %>
 			<%= submit_tag "Search" %>
