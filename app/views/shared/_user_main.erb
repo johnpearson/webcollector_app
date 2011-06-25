@@ -1,14 +1,26 @@
 <div class="folders round">
-	<h1>Welcome, <%= /\w*\s/.match(@user.name) %></h1>
+	<h1><i>Welcome, <%= /\w*\s/.match(@user.name) %></i></h1>
 	<table class="usermain">
 		<tr>
 			<td>
-				<h2><b>Here are your current folders:</b></h2><br />
+				<h2><b>Here is a list of your current folders:</b></h2><br />
 				<% @folders.each do |folder| %>
 					<ul>
 						<li><%= folder.name %></li>
 					</ul>
 				<% end %>
+			</td>
+			<td>
+				<h2><b>User information:</b></h2><br />
+				<ul>
+					<li><b>Name: </b><%= @user.name %></li>
+					<li><b>Email: </b><%= @user.email %></li>
+					<li><b>Member Since: </b><%= (@user.created_at.to_formatted_s(
+								:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></li>
+					<li><b>Last Sign in: </b>
+									<%= (@user.last_sign_in_at.to_formatted_s(
+									:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></li>
+				</ul>
 			</td>
 		</tr>
 	</table>

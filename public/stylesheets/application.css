@@ -135,12 +135,22 @@ table.main {
 
 table.usermain {
 	padding: 20px;
-	margin-left: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 2px dotted #99CCFF;
+}
+
+table.usermain h2 {
+	padding-left: 2em;
+}
+
+table.usermain tr td {
+	padding-right: 100px;
 }
 
 table.usermain ul li {
 	list-style: none;
-	padding-left: 10px;
+	padding-left: 3em;
 }
 
 /* Folders Styling */
