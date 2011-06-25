@@ -124,15 +124,33 @@ div.links ul li {
 	list-style-type: none;
 }
 
+/* Main Table for User Pages */
+
+table.main {
+	padding: 5px;
+	padding-top: 10px;
+}
+
+/* User Main Page Styling */
+
+table.usermain {
+	padding: 20px;
+	margin-left: 30px;
+}
+
+table.usermain ul li {
+	list-style: none;
+	padding-left: 10px;
+}
+
 /* Folders Styling */
 
 div.folders {
-	padding-top: 1.5em;
+	padding-top: 2em;
+	margin-left: 30px;
 	background-image: url('folder_background.png');
 	width: 1020px;
 	height: 1090px;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 table.folders {
@@ -167,16 +185,24 @@ div.sidebar {
 	padding-left: 5px;
 }
 
+div.sidebar img {
+	padding-left: 10px;
+}
+
 div.sidebar h2 {
-	float: left;
 	padding: 2px;
-	margin-top: 29px;
+	margin-top: 15px;
 	margin-bottom: 10px;
 	border-bottom: 2px dotted #99CCFF;
 }
 
 div.sidebar ul li {
-	padding-left: 10px;
+	list-style: none;
+}
+
+div.gravatar {
+	padding-top: 22px;
+	padding-left: 25px;
 }
 
 /* Pagination styling */
