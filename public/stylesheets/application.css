@@ -104,6 +104,7 @@ div.header {
 
 div.header img {
 	float: left;
+	padding-left: 5px;
 	margin-top: 8px;
 }
 
