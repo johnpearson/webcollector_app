@@ -98,38 +98,31 @@ div.signin {
 
 div.header {
 	margin-top: 0;
-	height: 83px;
+	height: 63px;
 	background-image: url('header_background.png');
 }
 
 div.header img {
 	float: left;
 	padding-left: 5px;
-	margin-top: 8px;
+	margin-top: 2px;
 }
 
 div.search {
 	position: absolute;
 	margin-left: 750px;
-	padding-top: 25px;
+	padding-top: 15px;
 }
 
 div.search input {
 	padding: 3px;
 }
 
-div.links ul li {
-	padding-top: 12px;
-	float: right;
-	display: inline-block;
-	list-style-type: none;
-}
-
 /* Main Table for User Pages */
 
 table.main {
 	padding: 5px;
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 /* User Main Page Styling */
