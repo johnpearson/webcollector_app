@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 120%;
 }
 
@@ -137,11 +137,12 @@ table.usermain {
 	padding: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 2em;
 	border-top: 2px dotted #99CCFF;
 }
 
 table.usermain h2 {
-	padding-left: 2em;
+	padding-left: 1em;
 }
 
 table.usermain tr td {
@@ -150,7 +151,16 @@ table.usermain tr td {
 
 table.usermain ul li {
 	list-style: none;
-	padding-left: 3em;
+	padding-left: 2em;
+}
+
+div.gravinfo {
+	padding-right: 6em;
+	padding-left: 6em;
+}
+
+div.gravinfo a:hover {
+	text-decoration: underline;
 }
 
 /* Folders Styling */
@@ -200,6 +210,7 @@ div.sidebar img {
 }
 
 div.sidebar h2 {
+	text-align: center;
 	padding: 2px;
 	margin-top: 15px;
 	margin-bottom: 10px;

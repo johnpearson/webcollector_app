@@ -11,7 +11,7 @@
 				<% end %>
 			</td>
 			<td>
-				<h2><b>User information:</b></h2><br />
+				<h2><b>Your profile:</b></h2><br />
 				<ul>
 					<li><b>Name: </b><%= @user.name %></li>
 					<li><b>Email: </b><%= @user.email %></li>
@@ -24,4 +24,10 @@
 			</td>
 		</tr>
 	</table>
+	<div class="gravinfo">
+		<h2><b>Gravatar Information</b></h2>
+		<p>Would you like to add a profile picture?  Gravatar is an easy and
+			efficient way to manage profile pictures across member websites.
+			Just visit <%= link_to "gravatar.com", "http://gravatar.com" %>.</p>
+	</div>
 </div>
