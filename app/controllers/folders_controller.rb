@@ -44,6 +44,7 @@ class FoldersController < ApplicationController
     # The edit action allows users to edit their folders by changing the 
     # content or the name
     def edit
+      @user = current_user
       @folder = Folder.find(params[:id])
     end
 
@@ -62,7 +63,7 @@ class FoldersController < ApplicationController
       @folder = Folder.find(params[:id])
       @folder.destroy
       flash[:success] = "Folder deleted."
-      redirect_to user_path
+      redirect_to folders_path
     end
       
   end

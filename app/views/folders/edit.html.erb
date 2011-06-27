@@ -1,14 +1,22 @@
-<div class="signin round">
-<%= form_for @folder do |f| %>
-	<%= render 'shared/error_messages', :object => f.object %>
-	<div class="field">
-		<p><%= f.label :name %><br />
-		<%= f.text_field :name %></p>
-		<p><%= f.label :content %><br />
-		<%= f.text_area :content %></p>
-	</div>
-	<div class="actions">
-		<%= f.submit "Submit" %>
-	</div>
-<% end %>
-</div>
+<%= render 'shared/user_header' %>
+	<table class="main">
+		<tr>
+			<td><%= render 'shared/sidebar' %></td>
+			<td>
+				<div class="signin round">
+					<%= form_for @folder do |f| %>
+						<%= render 'shared/error_messages', :object => f.object %>
+						<div class="field">
+							<p><%= f.label :name %><br />
+							<%= f.text_field :name %></p>
+							<p><%= f.label :content %><br />
+							<%= f.text_area :content %></p>
+						</div>
+					<div class="actions">
+						<%= f.submit "Submit" %>
+					</div>
+					<% end %>
+				</div>
+			</td>
+		</tr>
+	</table>
