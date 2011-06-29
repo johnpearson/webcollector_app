@@ -175,6 +175,10 @@ div.folders {
 	height: 1090px;
 }
 
+div.folders h1 img {
+	vertical-align: bottom;
+}
+
 table.folders {
 	width: 880px;
 	margin-right: auto;
