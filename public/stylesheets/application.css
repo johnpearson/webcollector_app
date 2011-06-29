@@ -249,21 +249,23 @@ div.paginate {
 }
 
 #flash_notice {
+	margin-left: 1em;
+	margin-top: 2em;
 	padding-left: 1em;
 	padding-top: .25em;
 	padding-bottom: .25em;
-	width: 25%;
-	font-size: 125%;
-	background: #F0E68C;
+	width: 60%;
+	font-size: 100%;
+	background: white;
 }
 
 #flash_success {
 	padding-left: 1em;
 	padding-top: .25em;
 	padding-bottom: .25em;
-	width: 25%;
+	width: 35%;
 	font-size: 125%;
-	background: #F0E68C;
+	background: white;
 	
 }
 
@@ -310,6 +312,14 @@ div.paginate {
 	font-size: 12px;
 	list-style: none;
 	padding-left: 1em;
+}
+
+/* Footer */
+
+div.footer {
+	padding: 2px;
+	margin-bottom: 2em;
+	text-align: center;
 }
 
 /* Round corners */
