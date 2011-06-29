@@ -1,5 +1,5 @@
-<h1>Welcome to Your Web Collector</h1>
-<h2>Please sign up...</h2>
+<h1><%= image_tag('logo.png', :alt => "Briefspace") %></h1>
+<h3>Please sign up...</h3>
 
 <div class="welcome round">
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
@@ -12,7 +12,7 @@
   <%= f.password_field :password %></p>
 
   <p><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></p>
+  <%= f.password_field :password_confirmation %></p><br />
 
   <p><%= f.submit "Sign up" %></p>
 <% end %>
