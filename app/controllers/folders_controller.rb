@@ -12,9 +12,9 @@ class FoldersController < ApplicationController
       @folder = current_user.folders.build(params[:folder])
       if @folder.save
         flash[:notice] = "Folder Created!"
-        redirect_to user_path
+        redirect_to folders_path
       else
-        render root_path
+        redirect_to new_folder_path
       end
     end
 
@@ -55,7 +55,7 @@ class FoldersController < ApplicationController
         flash[:notice] = "Folder Updated!"
         redirect_to folders_path
       else
-        render root_path
+        redirect_to folders_path
       end
     end
     
