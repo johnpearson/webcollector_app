@@ -65,6 +65,11 @@ class FoldersController < ApplicationController
       flash[:success] = "Folder deleted."
       redirect_to folders_path
     end
+    
+    def show
+      @user = current_user
+      @folder = Folder.find(params[:id])
+    end
       
   end
   
