@@ -33,7 +33,7 @@
   <p><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
   <%= f.password_field :current_password %></p><br />
 
-  <p><%= f.submit "Update" %></p>
+  <p><%= f.submit "Update" %></p><br />
 <% end %>
 
 <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
