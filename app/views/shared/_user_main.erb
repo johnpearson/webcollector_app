@@ -7,8 +7,7 @@
 				<h2><b>Here is a list of your current folders:</b></h2><br />
 				<% @folders.each do |folder| %>
 					<ul>
-						<li><%= link_to "#{folder.name}", 
-								"/folders/#{folder.id}" %></li>
+						<li><%= link_to "#{folder.name}", "/folders/#{folder.id}" %></li>
 					</ul>
 				<% end %>
 			</td>
