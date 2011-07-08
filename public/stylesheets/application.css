@@ -160,6 +160,7 @@ table.usermain tr td {
 table.usermain ul li {
 	list-style: none;
 	padding-left: 2em;
+	padding-top: .5em;
 }
 
 table.usermain p {
