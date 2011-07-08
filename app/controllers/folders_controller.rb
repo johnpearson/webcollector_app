@@ -53,7 +53,7 @@ class FoldersController < ApplicationController
       @folder = Folder.find(params[:id])
       if @folder.update_attributes(params[:folder])
         flash[:notice] = "Folder Updated!"
-        redirect_to folders_path
+        redirect_to folder_path
       else
         redirect_to folders_path
       end
