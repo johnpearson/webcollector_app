@@ -26,7 +26,7 @@ class FoldersController < ApplicationController
     def index
       @user = current_user
       if params[:search]
-        @temp_folders = Folder.all
+        @temp_folders = @user.folders
         @folders_array = []
         @temp_folders.each do |folder|
           @search = "#{params[:search]}"
@@ -36,7 +36,7 @@ class FoldersController < ApplicationController
         end
         @folders = @folders_array.paginate(:page => params[:page], :per_page => 2)
       else
-        @folders = Folder.all.paginate(:page => params[:page], :per_page => 2)
+        @folders = @user.folders.paginate(:page => params[:page], :per_page => 2)
       end
       @title = "Your Folders"
     end

@@ -11,7 +11,7 @@ class UserController < ApplicationController
   
   def index
     @user = current_user
-    @folders = Folder.all(:order => 'name')
+    @folders = @user.folders(:order => 'name')
     @title = current_user.name
   end
 end

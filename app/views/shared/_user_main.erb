@@ -5,10 +5,16 @@
 		<tr>
 			<td>
 				<h2><b>Here is a list of your current folders:</b></h2><br />
+				<% if @user.folders.empty? %>
+				<p>You have no folders!</p>  
+				<p>Create your first folder by clicking
+					<%= link_to "New Folder", new_folder_path %></p>
+				<% else %>
 				<% @folders.each do |folder| %>
 					<ul>
 						<li><%= link_to "#{folder.name}", "/folders/#{folder.id}" %></li>
 					</ul>
+				<% end %>
 				<% end %>
 			</td>
 			<td>

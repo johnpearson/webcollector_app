@@ -32,6 +32,12 @@ h3 {
 	font-size: 150%;
 }
 
+h4 {
+	padding-top: 20px;
+	text-align: center;
+	font-size: 120%;
+}
+
 /* Link Styling */
 
 a {
@@ -153,6 +159,10 @@ table.usermain tr td {
 
 table.usermain ul li {
 	list-style: none;
+	padding-left: 2em;
+}
+
+table.usermain p {
 	padding-left: 2em;
 }
 

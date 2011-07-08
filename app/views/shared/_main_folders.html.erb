@@ -1,7 +1,7 @@
 <div class="folders round">
 	<% if @folders.empty? %>
-		<h2>You have no folders!
-			<%= link_to "Create New Folder", new_folder_path %></h2>
+		<h4>You have no folders!
+			<%= link_to "Create New Folder", new_folder_path %></h4>
 	<% else %>
 		<%= image_tag("folders.png", :alt => "Current Folders") %>
 		<table class="folders">
