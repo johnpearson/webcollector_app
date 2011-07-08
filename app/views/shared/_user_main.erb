@@ -20,14 +20,14 @@
 			<td>
 				<h2><b>Your profile:</b></h2><br />
 				<ul>
-					<li><b>Name -</b>&nbsp;<%= @user.name %></li>
-					<li><b>Email -</b>&nbsp;<%= @user.email %></li>
-					<li><b>Company -</b>&nbsp;<%= @user.company %></li>
-					<li><b>Occupation -</b>&nbsp;<%= @user.occupation %></li>
-					<li><b>Location -</b>&nbsp;<%= @user.location %></li>
-					<li><b>Member Since -</b>&nbsp;<%= (@user.created_at.to_formatted_s(
+					<li><b>Name</b> - &nbsp;<%= @user.name %></li>
+					<li><b>Email</b> - &nbsp;<%= @user.email %></li>
+					<li><b>Company</b> - &nbsp;<%= @user.company %></li>
+					<li><b>Occupation</b> - &nbsp;<%= @user.occupation %></li>
+					<li><b>Location</b> - &nbsp;<%= @user.location %></li>
+					<li><b>Member Since</b> - &nbsp;<%= (@user.created_at.to_formatted_s(
 								:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></li>
-					<li><b>Last Sign in -</b>&nbsp;
+					<li><b>Last Sign in</b> - &nbsp;
 									  <%= (@user.last_sign_in_at.to_formatted_s(
 									:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></li>
 				</ul>
