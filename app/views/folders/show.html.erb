@@ -17,6 +17,8 @@
 					<% @content_arr.each do |line| %>
 					<%= link_to "#{line}", "#{line}" %><br />
 					<% end %></li><br />
+				<li><i>Notes:</i></li><br />
+				<li><%= @folder.notes %></li><br />
 				<% if user_signed_in? %>
 				<li><i><%= link_to "Edit", "#{@folder.id}/edit" %>
 				or&nbsp;<%= link_to "Delete", @folder, 

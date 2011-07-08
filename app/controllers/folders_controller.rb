@@ -34,9 +34,9 @@ class FoldersController < ApplicationController
             @folders_array.push folder
           end
         end
-        @folders = @folders_array.paginate(:page => params[:page], :per_page => 3)
+        @folders = @folders_array.paginate(:page => params[:page], :per_page => 2)
       else
-        @folders = Folder.all.paginate(:page => params[:page], :per_page => 3)
+        @folders = Folder.all.paginate(:page => params[:page], :per_page => 2)
       end
       @title = "Your Folders"
     end
