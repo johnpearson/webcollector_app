@@ -11,7 +11,7 @@ class UserController < ApplicationController
   
   def index
     @user = current_user
-    @folders = @user.folders(:order => 'name')
+    @folders = (@user.folders).sort!{|t1, t2| t1.name <=> t2.name}
     @title = current_user.name
   end
 end
