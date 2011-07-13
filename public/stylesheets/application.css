@@ -112,20 +112,20 @@ div.signin {
 
 div.header {
 	margin-top: 0;
-	height: 85px;
+	height: 65px;
 	background-image: url('header_background.png');
 	background-repeat: repeat-x;
 }
 
 div.header img {
 	float: left;
-	padding-top: 2px;
+	padding-top: 5px;
 }
 
 div.search {
 	position: absolute;
 	margin-left: 750px;
-	padding-top: 20px;
+	padding-top: 15px;
 }
 
 div.search input {
@@ -186,10 +186,6 @@ div.folders {
 	background-image: url('folder_background.png');
 	width: 1020px;
 	height: 1090px;
-}
-
-div.folders h1 img {
-	vertical-align: bottom;
 }
 
 table.folders {
