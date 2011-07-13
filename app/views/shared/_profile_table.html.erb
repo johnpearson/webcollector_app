@@ -1,0 +1,58 @@
+<table class="profile_list">
+	<tr>
+		<td>
+			<p><strong>Name:</strong></p>
+		</td>
+		<td>
+			<%= @user.name %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><strong>Email:</strong></p>
+		</td>
+		<td>
+			<%= @user.email %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><strong>Company:</strong></p>
+		</td>
+		<td>
+			<%= @user.company %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><strong>Occupation:</strong></p>
+		</td>
+		<td>
+			<%= @user.occupation %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><strong>Location</strong></p>
+		</td>
+		<td>
+			<%= @user.location %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><strong>Member Since:</strong></p>
+		</td>
+		<td>
+			<%= (@user.created_at.to_formatted_s(:long_ordinal)).gsub! /\d\d\:\d\d/, '' %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><strong>Last Sign In:</strong></p>
+		</td>
+		<td>
+			<%= (@user.last_sign_in_at.to_formatted_s(:long_ordinal)).gsub! /\d\d\:\d\d/, '' %>
+		</td>
+	</tr>
+</table>

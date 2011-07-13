@@ -12,7 +12,7 @@ class FoldersController < ApplicationController
       @folder = current_user.folders.build(params[:folder])
       if @folder.save
         flash[:notice] = "Folder Created!"
-        redirect_to folder_path
+        redirect_to "/user"
       else
         redirect_to new_folder_path
       end
@@ -63,7 +63,7 @@ class FoldersController < ApplicationController
       @folder = Folder.find(params[:id])
       @folder.destroy
       flash[:success] = "Folder deleted."
-      redirect_to folders_path
+      redirect_to "/user"
     end
     
     def show

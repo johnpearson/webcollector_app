@@ -143,6 +143,7 @@ table.main {
 
 table.usermain {
 	padding: 20px;
+	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 2em;
@@ -154,7 +155,7 @@ table.usermain h2 {
 }
 
 table.usermain tr td {
-	padding-right: 100px;
+	padding-right: 50px;
 }
 
 table.usermain ul li {
@@ -175,6 +176,7 @@ div.gravinfo {
 div.gravinfo a:hover {
 	text-decoration: underline;
 }
+
 
 /* Folders Styling */
 
